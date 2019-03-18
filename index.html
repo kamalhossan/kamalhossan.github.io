@@ -1,201 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="description" content="This is my Practice Website-1">
-	<meta name="Keyword" content="Kamal Hossan, Practice File, Web Devoloper">
-	<meta name="author" content="Kamal Hossan, Web Devoloper">
-	<title>Kamal Hossan Practice Website-1</title>
-	
-	<script language="javascript" type="text/javascript">
-	function clearText(field)
-	{
-		if (field.defaultValue == field.value) field.value = '';
-		else if (field.value == '') field.value = field.defaultValue;
-	}
-	</script>
 
-	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-	<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta name="Kamal Hossan Personal Website" content="ChitrakootWeb" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Kamal Hossan, Web Develoloper, Web Design" content="Personal Website, Kamal Hossan" />
+    <meta name="This is my personal website on Github" content="Kamal Hossan - Personal Website" />
 
-	<script type="text/javascript">
-	$(window).load(function() {
-		$('#slider').nivoSlider({
-			effect:'random',
-			slices:10,
-			animSpeed:500,
-			pauseTime:2200,
-			startSlide:0, //Set starting Slide (0 index)
-			directionNav:false,
-			directionNavHide:false, //Only show on hover
-			controlNav:false, //1,2,3...
-			controlNavThumbs:false, //Use thumbnails for Control Nav
-			pauseOnHover:true, //Stop animation while hovering
-			manualAdvance:false, //Force manual transitions
-			captionOpacity:0.8, //Universal caption opacity
-			beforeChange: function(){},
-			afterChange: function(){},
-			slideshowEnd: function(){} //Triggers after all slides have been shown
-		});
-	});
-	</script>
+    <!-- Title  -->
+    <title>Web Designer</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
+
 <body>
 
-	<div class="headersection templete clear">
-		<div class="logo clear">
-			<img src="images/logo.png" alt="logo"/>
-			<h2>Kamal Hossan</h2>
-			<p>This is my first HTML5 Practice Website </p>
-		</div>
-		<div class="social clear">
-			<a href="https://www.facebook.com/kamal.hossan43" target="_blank"> <img src="Images/social/facebook.png" alt="facebook"/> </a>
-			<a href="http://twitter.com/shimanto54" target="_blank"> <img src="Images/social/twitter.png" alt="Twitter"/> </a>
-			<a href="https://plus.google.com/u/0/+KamalHossan43?tab=wX" target="_blank"> <img src="Images/social/googleplus.png" alt="Google Plus"/> </a>
-			<a href="https://www.linkedin.com/in/kamal-hossan43/" target="_blank"> <img src="Images/social/linkedin.png" alt="Linkedin"/> </a>
-		</div>
-	</div>
-	<div class="navsection templete">
-		<ul>
-			<li> <a id="active" href="index.html">Home</a></li>	
-			<li> <a href="#">Freelancer Profile</a>
-				<ul>
-					<li> <a href="#"></a>Freelancer.com</li>
-					<li> <a href="#"></a>Upwork.com</li>
-					<li> <a href="#"></a>Peopleperhour.com</li>
-					<li> <a href="#"></a>Truelancer.com</li>
-				</ul>
-			</li>	
-			<li> <a href="#">Portfolio</a></li>	
-			<li> <a href="about.html">About</a></li>	
-			<li> <a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
-	
-	<div class="slidersection templete clear">
-		<div id="slider">
-            <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="This is slider one title or description"/></a>
-            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" title="This is slider Two title or description" /></a>
-            <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" title="This is slider Three title or description" /></a>
-            <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="This is slider Four title or description" /></a>
+    <!-- Start Header -->
+    <header class="header" data-scroll-index="0">
+
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg border-none bg-light-gray">
+            <div class="container sm-padding-10px-tb sm-padding-15px-lr">
+
+                <!-- start logo -->
+                <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
+                    <img src="img/logo-dark.png" alt="Ashton - One Page Portfolio" title="Ashton - One Page Portfolio">
+                </a>
+                <!-- end Logo -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="2">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="4">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end navbar links -->
+
+            </div>
+
+            <a href="javascript:void(0)" class="sidemenu_btn sm-display-none" id="sidebar_toggle">
+                <span></span> <span></span> <span></span>
+            </a>
+
+        </nav>
+        <!-- End Navbar  -->
+
+        <!-- Start Banner Container -->
+        <div class="bg-light-gray padding-100px-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 order-2 order-md-1 xs-padding-50px-tb">
+                        <!-- Start Left Content -->
+                        <div class="padding-twenty-top sm-padding-fifteen-top xs-no-padding">
+                            <h5 class="no-margin font-size18 xs-font-size16 text-medium-gray padding-twelve-top sm-padding-five-top xs-no-padding">Hello, I am</h5>
+                            <h1 class="text-uppercase font-size48 md-font-size42 sm-font-size36 xs-font-size26 font-weight-700 margin-20px-bottom">Ashton hokes</h1>
+                            <p class="width-50 md-width-75 xs-width-100 font-size16 xs-font-size14 border-top border-bottom padding-10px-tb">UX Designer / Frontend Developer</p>
+                            <div class="social-links margin-30px-bottom xs-margin-20px-bottom">
+                                <a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                                <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                                <a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="javascript:void(0);"><i class="fab fa-dribbble"></i></a>
+                                <a href="javascript:void(0);"><i class="fab fa-youtube"></i></a>
+                                <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <a class="btn white" href="#portfolio">View My Portfolio <i class="fas fa-arrow-right font-size15 margin-5px-left"></i></a>
+                        </div>
+                        <!-- End Left Content -->
+                    </div>
+                    <div class="col-md-5 col-sm-12 order-1 order-md-2 text-right xs-text-center xs-border-bottom xs-padding-nineteen-half-lr border-color-medium-gray">
+                        <!-- Start Right Image -->
+                        <img src="img/portfolio-pic-01.png" alt="Kamal Hossan" />
+                        <!-- End Right Image -->
+                    </div>
+                </div>
+            </div>
         </div>
-	</div>
-	<div class="contentsection contemplete clear">
-			<div class="maincontent clear">
-				<div class="samepost clear">
-						<h2>Out post title here</h2>
-						<img src="images/images.png" alt="post image"/>
-						<p>Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						</p>
-					<div class="readmore clear"> <a href="post.html">Read more</a></div>
-				</div>	
-				<div class="samepost clear">
-						<h2>Out post title here</h2>
-						<img src="images/bird.jpg" alt="post image"/>
-						<p>Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						</p>
-					<div class="readmore clear"> <a href="post.html">Read more</a></div>
-				</div>
-				<div class="samepost clear">
-						<h2>Out post title here</h2>
-						<img src="images/butterfly.jpg" alt="post image"/>
-						<p>Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						</p>
-					<div class="readmore clear"> <a href="post.html">Read more</a></div>
-				</div>
-					<div class="samepost clear">
-						<h2>Out post title here</h2>
-						<img src="images/marvel.jpg" alt="post image"/>
-						<p>Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						Main Content Text. Main Content Text. Main Content Text. Main Content Text. 
-						</p>
-						<div class="readmore clear"> <a href="post.html">Read more</a>
-					</div>
-				</div>		
-			</div>
-		<div class="sidebar clear">
-			<div class="samesiderbar clear">
-			<h2>Latest Article</h2>
-				<ul>
-					<li> <a href="#">Post Title One will be go here</a></li>	
-					<li> <a href="#">Post Title Two will be go here</a></li>	
-					<li> <a href="#">Post Title Three will be go here</a></li>	
-					<li> <a href="#">Post Title Four will be go here</a></li>	
-					<li> <a href="#">Post Title Five will be go here</a></li>	
-					<li> <a href="#">Post Title Six will be go here</a></li>	
-				</ul>
-				
-			</div>
-			<div class="samesiderbar clear">
-				<h2>Populer Article</h2>
-					<div class="populer clear">
-						<h3><a href="">Post Title will be go here</a></h3>
-						<img src="images/images.png" alt="post image"/>
-						<p>Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. 
-					</div>
-					
-					<div class="populer clear">
-						<h3><a href="">Post Title will be go here</a></h3>
-						<img src="images/bird.jpg" alt="post image"/>
-						<p>Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. 
-					</div>
-					
-					<div class="populer clear">
-						<h3><a href="">Post Title will be go here</a></h3>
-						<img src="images/butterfly.jpg" alt="post image"/>
-						<p>Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. 
-					</div>
-					
-					<div class="populer clear">
-						<h3><a href="">Post Title will be go here</a></h3>
-						<img src="images/marvel.jpg" alt="post image"/>
-						<p>Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. Sidebar Content Text. 
-					</div>
-			</div>
-		</div>
-	</div>
-		<div class="footersection templete clear">
-			<div class="footermenu clear">
-				<ul>
-				<li> <a href="index.html">Home</a></li>	
-				<li> <a href="about.html">About</a></li>	
-				<li> <a href="contact.html">Contact</a></li>	
-				</ul>
-			</div>
-		<p>&copy; Kamal Hossan Practice File</p>
-		</div>
-		<div class="fixedicon clear">
-			<a href="https://www.facebook.com/kamal.hossan43"><img src="images/social/fb.png" alt="Facebook"/></a>
-			<a href="http://twitter.com/shimanto54"><img src="images/social/tw.png" alt="Twitter"/></a>
-			<a href="https://plus.google.com/u/0/+KamalHossan43?tab=wX"><img src="images/social/gl.png" alt="Google Plus"/></a>
-			<a href="https://www.linkedin.com/in/kamal-hossan43/"><img src="images/social/Ln.png" alt="Linkedin"/></a>
-			<a href="http://youtube.com/discoveryourmind"><img src="images/social/yb.png" alt="Youtube"/></a>
-		</div>
+      </header>
+    <!-- End Header -->
 
+    <!-- Start About Section-->
+    <section data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h2 class="font-size34 md-font-size30 sm-font-size26 xs-font-size24 font-weight-700 section-title">About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start about me section-->
+                <div class="col-lg-6 col-md-12 sm-margin-30px-bottom">
+                    <p class="font-size15 xs-font-size14">Tempora incidunt ut labore et dolore exercitation ullamco nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur fugiat nulla pariatur dolore exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa.</p>
+                    <a class="btn white" href="#">
+                        <i class="fas fa-arrow-alt-circle-down font-size16"></i>
+                        <span class="alt-font margin-5px-left">Download My CV</span>
+                    </a>
+                </div>
+                <!-- end about me section-->
 
-<script type="text/javascript">
-var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow7.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
-	
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-xxxxxxxxx-1', 'auto');
-  ga('send', 'pageview');
-</script>
+                <!-- start skill section-->
+                <div class="col-lg-6 col-md-12">
+                    <div class="padding-20px-left sm-no-padding">
+                        <div class="skills width-100 margin-40px-bottom sm-margin-30px-bottom xs-no-margin-bottom">
+
+                            <div class="prog-item">
+                                <p>Web Design</p>
+                                <div class="skills-progress"><span data-value='95%'></span></div>
+                            </div>
+                            <div class="prog-item">
+                                <p>Graphic Design</p>
+                                <div class="skills-progress"><span data-value='85%'></span></div>
+                            </div>
+                            <div class="prog-item">
+                                <p>Development</p>
+                                <div class="skills-progress"><span data-value='90%'></span></div>
+                            </div>
+                            <div class="prog-item">
+                                <p>Marketing</p>
+                                <div class="skills-progress"><span data-value='80%'></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end skill section-->
+            </div>
+        </div>
+    </section>
+    <!-- End About Section-->
+
+    <!-- Start Timeline Section-->
+    <section class="bg-light-gray" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">My Experience</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+
+                        <!-- start experience section-->
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">2 Years</span>
+                                    <span class="year">2013</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Visual Art &amp; Design</h5>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                        <!-- start experience section-->
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">1 Years</span>
+                                    <span class="year">2015</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Product Designer</h5>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                        <!-- start experience section-->
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">2 Years</span>
+                                    <span class="year">2016</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Web Designer</h5>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                        <!-- start experience section-->
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">2 Years</span>
+                                    <span class="year">2018</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Graphic Designer</h5>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Timeline Section-->
+
+    <!-- Start Portfolio Section -->
+    <section class="portfolio" data-scroll-index="3" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">My Portfolio</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start links -->
+                <div class="filtering col-sm-12 text-center">
+                    <span data-filter='*' class="active">All</span>
+                    <span data-filter='.develop'>Develop</span>
+                    <span data-filter='.design'>Design</span>
+                    <span data-filter='.graphic'>Graphic</span>
+                </div>
+                <!-- End links -->
+                <div class="clearfix"></div>
+
+                <!-- gallery -->
+                <div class="gallery text-center width-100">
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items graphic develop">
+                        <div class="item-img">
+                            <img src="img/portfolio/1.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/1.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Show your time</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items design">
+                        <div class="item-img">
+                            <img src="img/portfolio/2.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/2.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Creative design</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items develop graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/3.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/3.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Tag Design Mockup</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items design">
+                        <div class="item-img">
+                            <img src="img/portfolio/4.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/4.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Fries Mockup</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items design">
+                        <div class="item-img">
+                            <img src="img/portfolio/5.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/5.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Creative Design</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <!-- start gallery item -->
+                    <div class="col-md-4 items develop graphic">
+                        <div class="item-img">
+                            <img src="img/portfolio/6.jpg" alt="image">
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info width-100 vertical-center">
+                                    <a href="img/portfolio/6.jpg" class="popimg">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    <h6>Apple product design</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gallery item -->
+
+                    <div class="clear-fix"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!--  Start Services Section -->
+    <section class="services bg-light-gray" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">My Services</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6 border-right border-bottom border-color-medium-gray xs-no-border-right">
+                    <div class="text-center padding-40px-tb xs-padding-20px-bottom padding-20px-lr xs-no-padding-lr xs-no-padding-top">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-tools text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Web Development</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6 border-right border-bottom border-color-medium-gray sm-no-border-right">
+                    <div class="text-center padding-40px-tb xs-padding-20px-tb padding-20px-lr xs-no-padding-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-gears text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Web Design</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6 sm-border-right border-bottom border-color-medium-gray xs-no-border-right">
+                    <div class="text-center padding-40px-tb xs-padding-20px-tb padding-20px-lr xs-no-padding-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-mobile text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Social Media</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6 border-right sm-border-bottom border-color-medium-gray sm-no-border-right">
+                    <div class="text-center padding-40px-tb xs-padding-20px-tb padding-20px-lr xs-no-padding-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-layers text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Photography</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6 border-right border-color-medium-gray xs-border-bottom xs-no-border-right">
+                    <div class="text-center padding-40px-tb xs-padding-20px-tb padding-20px-lr xs-no-padding-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-presentation text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Graphic Design</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+
+                <!-- start services item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center padding-40px-tb xs-padding-20px-top padding-20px-lr xs-no-padding-lr xs-no-padding-bottom">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-15px-bottom"><i class="icon icon-genius text-extra-dark-gray font-size36"></i></div>
+                        <div class="alt-font text-extra-dark-gray margin-10px-bottom font-size18 xs-font-size16">Content Writing</div>
+                        <p class="width-85 md-width-90 xs-width-100 center-col no-margin-bottom">This creative template design provide ideal and variety of design services and solutions for website.</p>
+                    </div>
+                </div>
+                <!-- end services item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Testimonials Section -->
+    <section class="center-col testimonials text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">Testimonials</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="position-relative">
+                        <div class="owl-carousel owl-theme">
+
+                            <!-- start testimonials item-->
+                            <div>
+                                <i class="fas fa-quote-left font-size22 margin-40px-bottom sm-margin-30px-bottom xs-margin-20px-bottom theme-black-color"></i>
+                                <p class="width-75 sm-width-85 xs-width-90 center-col padding-40px-bottom sm-padding-30px-bottom xs-padding-20px-bottom font-size16 xs-font-size14">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                                <h4 class="theme-black-color">Jama Karle</h4>
+                                <h6>CEO</h6>
+                            </div>
+                            <!-- end testimonials item-->
+
+                            <!-- start testimonials item-->
+                            <div>
+                                <i class="fas fa-quote-left font-size22 margin-40px-bottom sm-margin-30px-bottom xs-margin-20px-bottom theme-black-color"></i>
+                                <p class="width-75 sm-width-85 xs-width-90 center-col padding-40px-bottom sm-padding-30px-bottom xs-padding-20px-bottom font-size16 xs-font-size14">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,deserunt mollit anim id est laborum.</p>
+                                <h4 class="theme-black-color">Ivonne Drennan</h4>
+                                <h6>Manager</h6>
+                            </div>
+                            <!-- end testimonials item-->
+
+                            <!-- start testimonials item-->
+                            <div>
+                                <i class="fas fa-quote-left font-size22 margin-40px-bottom sm-margin-30px-bottom xs-margin-20px-bottom theme-black-color"></i>
+                                <p class="width-75 sm-width-85 xs-width-90 center-col padding-40px-bottom sm-padding-30px-bottom xs-padding-20px-bottom font-size16 xs-font-size14">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.</p>
+                                <h4 class="theme-black-color">Bettye Mauck</h4>
+                                <h6>Designer</h6>
+                            </div>
+                            <!-- end testimonials item-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Start Blog Section -->
+    <section class="blog bg-light-gray" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">Blog</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- start blog -->
+                <div class="col-lg-4 sm-margin-20px-bottom">
+                    <div class="item text-center">
+                        <div class="post-img">
+                            <img src="img/blog/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="tag alt-font font-weight-300">
+                                <a href="blog.html">Designing | <span class="font-size12 display-inline-block">02 May 2018</span></a>
+                            </div>
+                            <h5 class="margin-15px-bottom"><a href="single-post.html">Designing work with us</a></h5>
+                            <p>Dolorem ipsum quia dolor consectetur, amet adipisci velit, sed quia non eius numquam modi tempora.</p>
+                            <a href="single-post.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end blog -->
+
+                <!-- start blog -->
+                <div class="col-lg-4 sm-margin-20px-bottom">
+                    <div class="item text-center">
+                        <div class="post-img">
+                            <img src="img/blog/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="tag alt-font font-weight-300">
+                                <a href="blog.html">Positive | <span class="font-size12 display-inline-block">11 April 2018</span></a>
+                            </div>
+                            <h5 class="margin-15px-bottom"><a href="single-post.html">Always think be positive</a></h5>
+                            <p>Consectetur dolorem ipsum quia dolor sit amet, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                            <a href="single-post.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end blog -->
+
+                <!-- start blog -->
+                <div class="col-lg-4">
+                    <div class="item text-center">
+                        <div class="post-img">
+                            <img src="img/blog/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="tag alt-font font-weight-300">
+                                <a href="blog.html">Meeting | <span class="font-size12 display-inline-block">04 March 2018</span></a>
+                            </div>
+                            <h5 class="margin-15px-bottom"><a href="single-post.html">Meeting with our clients</a></h5>
+                            <p>Numquam dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                            <a href="single-post.html" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end blog -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section -->
+
+    <!-- Start Contact Section -->
+    <section class="contact no-padding-bottom" data-scroll-index="6">
+        <div class="container margin-100px-bottom md-margin-70px-bottom sm-margin-50px-bottom">
+            <div class="row">
+                <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">Contact</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- start get in touch -->
+                <div class="col-lg-12">
+                        <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+                            <input type="hidden" name="form-type" value="contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="subject" placeholder="Subject:" data-constraints="@NotEmpty">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                                </div>
+                                <div class="mfControls col-md-12 text-center">
+                                    <button type="submit" class="btn white">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                <!-- end get in touch -->
+
+            </div>
+        </div>
+
+        <div class="bg-light-gray padding-30px-tb border-top border-color-medium-gray">
+            <div class="container">
+                <div class="row info">
+
+                    <!-- start quickly contact -->
+
+                    <div class="col-lg-4 col-md-3 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+                        <span class="icon font-size32"><i class="icon-phone"></i></span>
+                        <div class="cont">
+                            <h6>Phone</h6>
+                            <p>(+44) 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+                        <span class="icon font-size32"><i class="icon-map"></i></span>
+                        <div class="cont">
+                            <h6>Address</h6>
+                            <p>3389 Eglinton Avenue, London</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 item text-center">
+                        <span class="icon font-size32"><i class="icon-envelope"></i></span>
+                        <div class="cont">
+                            <h6>Email</h6>
+                            <p>email@youradress.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end quickly contact -->
+            </div>
+        </div>
+
+    </section>
+    <!-- End Contact Section -->
+
+    <!--  Start Footer Section -->
+    <footer class="bg-black">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="font-size13 text-uppercase letter-spacing-1 text-light-gray">&copy; 2019 Ashton is Powered by Chitrakoot Web</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top" class="back-to-top reveal">
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- all js include start -->
+
+    <!-- Java script -->
+    <script src="js/core.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- contact form scripts -->
+    <script src="js/mailform/jquery.form.min.js"></script>
+    <script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
+
+    <!-- all js include end -->
+
 </body>
+
 </html>
