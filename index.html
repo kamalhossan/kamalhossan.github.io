@@ -538,8 +538,8 @@
 
                 <!-- start get in touch -->
                 <div class="col-lg-12">
-                        <form method="post" action="bat/rd-mailform.php" class="mailform off2">
-                            <input type="hidden" name="form-type" value="contact">
+                        <form method="POST" action="https://formspree.io/kamal.hossan35@gmail.com" class="mailform off2">
+                            <input type="text" name="form-type" value="Name">
                             <div class="row">
                                 <div class="col-md-6">
                                     <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
@@ -548,7 +548,7 @@
                                     <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                                    <input type="text" name="email" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
                                 </div>
                                 <div class="col-md-6">
                                     <input type="text" name="subject" placeholder="Subject:" data-constraints="@NotEmpty">
