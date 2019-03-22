@@ -1,0 +1,54 @@
+.navbar {
+  border-bottom: 3px solid #008ed6;
+  background: #272829;
+  opacity: 0.7;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.card-form {
+  opacity: 0.8;
+}
+
+.dark-overlay{
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 600px;
+  }
+.home-inner {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.fa {
+  background: #fff;
+  color: #007bff;
+  padding:4px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.fb {
+  font-size: 30px;
+  background: #000;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+}
+#home-section {
+  background: url('backgroup.jpg') no-repeat center top;
+  max-height: 905px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#explore-head-section {
+  background-color: #333;
+}
+
+@@media (max-width: 768px) {
+
+  #home-section h1 {
+    font-size: 36px;
+
+  }
+
+}
