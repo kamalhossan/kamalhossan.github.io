@@ -6,7 +6,7 @@ body {font-family: 'Libre Franklin', sans-serif; font-size:14px; line-height:18p
 .clear {overflow:hidden}
 input[type="text"],input[type="email"]{
 	width:300px;
-	padding:5px;	
+	padding:5px;
 	margin:5px;
 	border: 1px solid #ddd;
 }
@@ -54,9 +54,9 @@ input[type="submit"]:hover {background:#DF0; color:white}
 	}
 .navsection ul {margin:0; padding:0; list-style:none}
 .navsection ul li{
-	float:left; 
-	border-left: 1.2px solid #BA7048; 
-	border-right: 1px solid #BA7022; 
+	float:left;
+	border-left: 1.2px solid #BA7048;
+	border-right: 1px solid #BA7022;
 	display:inline-block;
 	position:relative;
 }
@@ -82,8 +82,8 @@ input[type="submit"]:hover {background:#DF0; color:white}
 .navsection ul li ul li {}
 .navsection ul li ul li a{}
 .slidersection {
-    
- }	
+
+ }
 .navsection ul li:hover ul{left:5px}
 .contentsection {background:#fff}
 .contemplete {
@@ -100,6 +100,13 @@ input[type="submit"]:hover {background:#DF0; color:white}
     margin: 0;
     margin-left: 0;
     border: 1px solid #2b14c5;
+}
+.peopleperhour {
+
+}
+.peopleperhour img {
+	width: 10px;
+	height: 10px;
 }
 .about {}
 .about img {float:left;padding: 5px;background: #fef;margin-right: 9px;border: 1px solid #fff;}
@@ -148,7 +155,7 @@ input[type="submit"]:hover {background:#DF0; color:white}
     border-radius: 12px;
 }
 
-.readmore a:hover {color:#0A4898;} 
+.readmore a:hover {color:#0A4898;}
 .samepost h2, .about h2{
     background: #e5c591;
     padding: 10px;
