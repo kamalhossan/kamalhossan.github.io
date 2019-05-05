@@ -1,0 +1,144 @@
+.heading{
+	background-color: #0D3F98;
+	/*height: 108px;*/
+	border-bottom: 3px #AB6D24 solid;
+	}
+
+.logo img{
+	padding-left:40px;
+}
+.titles{
+	border-bottom: 2px  solid white;
+}
+.titles h2{
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: bold;
+	padding-left: 40px;	
+}
+.bbs{
+	color: #09C3F2;
+}
+
+.slider im{
+	width: 1100px;
+}
+.row h2{
+	color: #FE0000;	
+}
+
+.navbar{
+	margin-left: 10px;
+}
+.navbar ul li a{
+	line-height: 2px;
+	color: white;
+	width:150px;
+	font-size: 20px;
+	padding-top: 15px;
+}
+.dropdown-item{
+	line-height: 0.8rem !important;
+}
+.dropdown-menu {
+	width: 23rem !important;
+	background-color: #0D3F98 !important;
+	height: 12rem !important;
+}
+.card-body a{
+	color: black;
+}
+.names a{
+	font-style;
+}
+.card-deck{
+	padding-top: 20px;
+	border: none;
+}
+.footer{
+	background-color: #1C1C1E !important;
+}
+.footer-row{
+	background-color: #151517 !important;
+}
+.card h5{
+	color:black;
+}
+.card1{
+	background-color: #1C1C1E !important;
+	padding-left: 80px;
+}
+.card2{
+	background-color: #151517 !important;
+	height: 40px;
+}
+.footer h5{
+	color: white;
+}
+.card1 p{
+	color: #B5B2B2;
+	
+}
+.card2 p{
+	color: #C6C6C6;
+	line-height: 2px;
+	font-size:10px;
+}
+.cardright{
+	text-align: right;
+}
+.com{
+	color:#F60001;
+	font-style: bold
+}
+
+.fa-facebook-square{
+ color: #6E82B6;
+ font-size: 35px;
+}
+.fa-google-plus-square{
+	color: #E44B3B;
+	font-size: 35px;
+}
+.fa-twitter-square{
+	color: #00ACED ;
+	font-size: 35px;
+}
+.fa-linkedin{
+	color: #0073B2 ;
+	font-size: 35px;
+}
+.fa-youtube-square{
+	color: #FE0000;
+	font-size: 35px;
+}
+.about{
+	padding: 50px;
+	margin-left: 30px;
+	align-items: center; 
+}
+
+.aboutlogo{
+	padding-top: 20px;
+	width:1000px;
+	height: 85px;
+}
+/*.cont{
+	padding: 20px 20px;
+	height: 1000px;
+	width: 100%;
+	background-color: white;
+}
+.map{
+	padding-top: 10px;
+	height: 1000px;
+	width: 100%;
+	border: 2px grey solid;
+}
+.for-contact{
+
+}*/
+.contact-border{
+	background-color: #00000;
+	border: 2px black solid;
+}

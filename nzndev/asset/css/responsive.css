@@ -1,0 +1,18 @@
+
+@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { 
+.titles h2 {
+    font-size: 34px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-left: 71px;
+}
+ }
+
+
+@media (min-width: 1200px) { ... }
