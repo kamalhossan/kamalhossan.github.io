@@ -1,0 +1,25 @@
+.welcome {
+    height: 85vh;
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text p{
+ font-family: 'Lora', serif;
+}
+
+.texth h1{
+    font-family: 'Bitter', serif;
+}
+.bg-same {
+    background: #323033;
+}
