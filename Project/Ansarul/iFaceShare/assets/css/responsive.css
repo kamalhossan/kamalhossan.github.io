@@ -1,0 +1,66 @@
+/*===========================================*/
+    /*HEADER PART RESPONSIVE STARTS HERE*/
+/*===========================================*/
+@media screen and (max-width: 980px){
+    .logo_area{
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+    .login_area{
+        width:400px;
+        margin:15px auto;
+        float:none;
+    }
+    .login_area form{
+        float:none;
+    } 
+    .birth_date{
+        margin-bottom: 8px;
+    }
+    .left_area p{
+        width: 100%;
+    }
+    .btn{
+        margin-bottom: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .login_area{
+        width:100%;
+    }
+    .login_area .email,
+    .login_area .password,
+    .login_area .login{
+         float:none;
+         margin-right: 0px;
+    }
+    .login_area input[type="text"],
+    .login_area input[type="password"]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .login_area input[type="submit"]{
+        margin: auto;
+        padding: 10px 20px;
+    }
+    .left_area{
+        width:100%;
+        float:none;
+    }
+    .left_area p{
+        text-align: center;
+    }
+    .right_area{
+        width:100%;
+        float:none;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width:90%;
+    }
+}
+/*===========================================*/
+    /*HEADER PART RESPONSIVE ENDS HERE*/
+/*===========================================*/

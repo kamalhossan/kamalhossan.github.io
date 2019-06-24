@@ -1,0 +1,286 @@
+/*===========================================*/
+    /*HEADER PART CSS STARTS HERE*/
+/*===========================================*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background:#3E5C9A;
+    padding:8px 0px;
+}
+.header::after{
+    content:'';
+    clear:both;
+    display: block;
+}
+.container{
+    width: 65%;
+    margin:auto;
+    max-width: 1000px;
+}
+.logo_area{
+    width:30%;
+    float:left;
+}
+.logo_area img{
+    width: 160px;
+    margin-top: 15px;
+}
+.login_area{
+    width:70%;
+    float:left;
+    color:#fff;
+}
+.login_area form{
+    float:right;
+}
+.login_area label,
+.login_area input{
+    display: block;
+    margin-bottom: 5px;
+}
+.login_area label{
+    font-size: 14px;
+    font-weight: 300;
+}
+.login_area .email,
+.login_area .password,
+.login_area .login{
+    float:left;
+    margin-right: 15px;
+}
+.login_area .login{
+    margin-right: 0px;
+}
+.login_area input[type="text"],
+.login_area input[type="password"]{
+    border:1px solid #000;
+    font-weight: 300;
+    padding:2px 5px;
+}
+.login_area .password a{
+    text-decoration: none;
+    color:#9cb4d8;
+    font-size: 12px;
+}
+.login_area .password a:hover{
+    text-decoration: underline;
+}
+.login_area input[type="submit"]{
+    background-color: #4267b2;
+    border:1px solid #29487d;
+    padding:3px 8px;
+    font-weight: 400;
+    margin-top: 22px;
+    color: #fff;
+}
+
+.login_area input[type="submit"]:hover{
+    background-color: #365899;
+    cursor: pointer;
+}
+/*===========================================*/
+    /*SIGN UP PART CSS ENDS HERE*/
+/*===========================================*/
+
+.signup_area{
+    background: linear-gradient(#ffffff, #D5DAE9);
+    padding: 25px 0px;
+}
+.signup_area::after{
+    content:'';
+    clear:both;
+    display: block;
+}
+.left_area{
+    width:55%;
+    float:left;
+}
+.left_area p{
+    width: 90%;
+    font-size: 20px;
+    color:#0e385f;
+    font-weight: 600;
+}
+.left_area img{
+    width:100%;
+}
+.right_area{
+    width:45%;
+    float:left;
+}
+.right_area h2{
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+    font-weight: 600;
+}
+.right_area h4{
+    font-size: 19px;
+    color: #1d2129;
+    font-weight: 400;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+.right_area input[type="text"],
+.right_area input[type="password"]{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #bdc7d8;
+    border-radius:5px;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.full_name{
+    overflow: hidden;
+}
+.first_name{
+    width: 48%;
+    float:left;
+    margin-right: 4%;
+}
+.surename{
+    width: 48%;
+    float:left;
+}
+.birthday{
+    overflow: hidden;
+}
+.birthday h4{
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.birth_date{
+    width: 200px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.birth_date select{
+    border:1px solid #ccc;
+    padding:5px;
+    float:left;
+}
+.birth_link{
+    width:180px;
+    float:left;
+}
+.birth_link a{
+    font-size: 13px;
+    color: #3E5C9A;
+    display: block;
+    line-height: 1.1;
+    text-decoration: none;
+}
+.birth_link a:hover{
+    text-decoration: underline;
+}
+.gender{
+    margin: 10px 0;
+}
+.gender label{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.text_box{
+    width:80%;
+    margin-bottom: 20px;
+}
+.text_box p{
+    font-size: 12px;
+}
+.text_box a{
+    text-decoration: none;
+    color: #3E5C9A;
+}
+.text_box a:hover{
+    text-decoration: underline;
+}
+.btn{
+    margin-bottom: 30px;
+}
+.btn input{
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border-width: 1px;
+    border-style: solid;
+    padding: 7px 14px;
+    min-width: 194px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.btn input:hover{
+    cursor:pointer;
+    background: linear-gradient(#578843, #67ae55);
+}
+.business {
+    font-weight: 600;
+    color: #3E5C9A;
+    text-decoration: none;
+}
+
+.business:hover{
+    text-decoration: underline;
+}
+/*===========================================*/
+    /*SIGN UP PART CSS ENDS HERE*/
+/*===========================================*/
+
+/*===========================================*/
+    /*FOOTER AREA CSS STARTS HERE*/
+/*===========================================*/
+.footer_area{
+    padding:30px 0;
+}
+
+.footer_area ul{
+    margin: 0;
+    padding: 0;
+}
+.footer_area ul li{
+    display: inline;
+}
+.footer_area ul li.active a{
+    color: #737373;
+}
+.footer_area ul li a{
+    text-decoration: none;
+    color: #385898;
+    font-size: 13px;
+}
+.footer_top ul li{
+    margin-right: 8px;
+}
+.footer_top ul li:last-child,
+.footer_middle ul li:last-child{
+    margin-right: 0px;
+}
+.footer_top ul li:last-child{
+        border: 1px solid #999;
+        padding:0px 5px;
+}
+.footer_middle ul li{
+    margin-right: 10px;
+}
+.footer_area hr{
+    color: #F7F8FB;
+}
+.footer_bottom{
+    margin-top: 20px;
+}
+.footer_area span{
+    color: #737373;
+    font-size: 13px;
+}
+
+/*===========================================*/
+    /*FOOTER AREA CSS ENDS HERE*/
+/*===========================================*/
