@@ -16,7 +16,7 @@ img.developer_img {
 .center-padding {
 	padding: 80px 0px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 	img.developer_img {
 		width: 455px;
 	}
