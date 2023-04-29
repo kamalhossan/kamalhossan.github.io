@@ -234,3 +234,12 @@ input[type="submit"]:hover {background:#DF0; color:white}
 .fixedicon img {
 	width:50px;
 }
+
+/*new css **/
+img.developer_img {
+    max-width: unset;
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
