@@ -875,7 +875,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-center">
-                        <span class="font-size13 text-uppercase letter-spacing-1 text-light-gray">&copy; 2023 Kamal
+                        <span class="font-size13 text-uppercase letter-spacing-1 text-light-gray copyrightYear">&copy; 2023 Kamal
                             Hossan</span>
                     </div>
                 </div>
@@ -890,6 +890,15 @@
     <!-- all js include start -->
 
     <!-- Java script -->
+    <script>
+        window.addEventListener('load', function(){
+            let copyrightYear = document.querySelector('.copyrightYear');
+
+            let currentYear = new Date().getFullYear();
+
+            copyrightYear.innerHTML = `&copy; ${currentYear} Kamal Hossan`;
+        })
+    </script>
     <script src="js/core.min.js"></script>
 
     <!-- custom scripts -->
