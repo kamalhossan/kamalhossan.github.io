@@ -243,3 +243,8 @@ img.developer_img {
     bottom: 0;
     right: 0;
 }
+section.weatherDiv {
+    position: fixed;
+    left: 0;
+    top: 0;
+}

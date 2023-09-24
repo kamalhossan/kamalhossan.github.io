@@ -1,3 +1,45 @@
 .hireme {
     color: black;
 }
+.weatherSection {
+    position: relative;
+}
+.weatherDiv {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 300px;
+    padding: 0;
+    
+}
+.weatherDiv .city, .weatherDiv .currentTime {
+    font-size: 16px;
+}
+.weatherDiv .temp {
+    font-size: 28px;
+}
+.weatherDiv .small.weatherDescription {
+    text-transform: capitalize;
+}
+.closeWeather {
+    position: absolute;
+    right: 0;
+    background: #007bff;
+    padding: 4px;
+    border-radius: 111px;
+    z-index: 99;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.promo {
+    margin-top: 75px;
+    background: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 0 5px 0;
+    transition: 0.3s all ease-in-out;
+}

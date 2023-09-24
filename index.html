@@ -32,6 +32,7 @@
 <body>
 
     <!-- Start Header -->
+ 
     <header class="header" data-scroll-index="0">
 
         <!-- Start Navbar -->
@@ -77,6 +78,10 @@
             </div>
 
         </nav>
+
+        <div class="promo">
+            <marquee behavior="slide " direction="left">To See Weather Informations Please Reload and Allow Your Locations</marquee>
+        </div>
         <!-- End Navbar  -->
 
         <!-- Start Banner Container -->
@@ -885,6 +890,53 @@
             <i class="fa fa-angle-up"></i>
         </div>
     </footer>
+
+    <section class="weatherSection">
+        <div class="weatherDiv">
+            <div class="container">
+
+                <div class="closeWeather">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+              
+                  <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+              
+                      <div class="card" style="color: #4B515D; border-radius: 35px;">
+                        <div class="card-body p-4">
+              
+                          <div class="d-flex">
+                            <h6 class="flex-grow-1 city">Warsaw</h6>
+                            <h6 class="currentTime">15:07</h6>
+                          </div>
+              
+                          <div class="d-flex flex-column text-center mt-5 mb-4">
+                            <h6 class="display-4 mb-0 font-weight-bold temp" style="color: #1C2331;"> </h6>
+                            <span class="small weatherDescription" style="color: #868B94">Stormy</span>
+                          </div>
+              
+                          <div class="d-flex align-items-center">
+                            <div class="flex-grow-1" style="font-size: 1rem;">
+                              <div class="windSpeed"><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h  </span></div>
+                              <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="humidity ms-1"> 84% </span>
+                              </div>
+                            </div>
+                            <div>
+                              <img class="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png"
+                                width="100px">
+                            </div>
+                          </div>
+              
+                        </div>
+                      </div>
+              
+                    </div>
+                  </div>
+              
+                </div>
+        </div>
+      </section>
+
     <!-- End Footer Section -->
 
     <!-- all js include start -->
@@ -909,6 +961,53 @@
     <script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
 
     <!-- all js include end -->
+
+
+    <script>
+
+        window.addEventListener('load', function(){
+            setInterval(() => {
+                let currentTime = new Date().toLocaleTimeString();
+                document.querySelector('.currentTime').innerHTML = currentTime;
+            }, 1000);
+
+            navigator.geolocation.getCurrentPosition((position) => {
+                let latitude = position.coords.latitude;
+                let longitude = position.coords.longitude;
+
+                let apikey = 'f9655df1f6a71b6198f151d062830ec0';
+                const apiURL  = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apikey}&units=metric`
+
+                fetch(apiURL)
+                .then( res => res.json() )
+                .then(response => {
+                    document.querySelector('.city').innerHTML = response.name;
+                    document.querySelector('.temp').innerHTML = Math.round(response.main.temp) + '°C';
+                    document.querySelector('.humidity').innerHTML = response.main.humidity + '%';
+                    document.querySelector('.windSpeed').innerHTML = '<i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1">' + Math.round(response.wind.speed) + ' km/h  </span>';
+                    document.querySelector('.weatherIcon').src = 'https://openweathermap.org/img/wn/'+ response.weather[0].icon +'@2x.png' ;
+                    document.querySelector('.weatherDescription').innerHTML = response.weather[0].description ;
+
+                    console.log(response);
+                }) 
+                .catch(error => console.error('Error:', error));
+                })
+
+                document.querySelector('.closeWeather').addEventListener('click', ()=>{
+                    document.querySelector('.weatherSection').style.display = 'none';
+                })
+
+                let promo = document.querySelector('.promo');
+
+                promo.addEventListener('click', ()=>{
+                    promo.style.display = 'none';
+                })
+  
+            })
+
+
+    </script>
+
 
 </body>
 
