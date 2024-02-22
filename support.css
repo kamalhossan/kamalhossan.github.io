@@ -27,3 +27,14 @@ img.developer_img {
 		position: relative;
 	}
 }
+#loom-companion-mv3 {
+    display: none !important;
+}
+section#shadow-host-companion {
+    display: none;
+}
+.tempature {
+    position: fixed;
+    bottom: 0;
+    left: 6px;
+}
