@@ -248,14 +248,3 @@ section.weatherDiv {
     left: 0;
     top: 0;
 }
-.tempature {
-    position: fixed;
-    bottom: 0;
-    left: 6px;
-}
-#loom-companion-mv3 {
-    display: none !important;
-}
-section#shadow-host-companion {
-    display: none;
-}
